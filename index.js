@@ -2,13 +2,32 @@ let weeklyExpenses = 0;
 let monthlyExpenses = 0;
 let annualExpenses = 0;
 
-// Your Code Here
+//Iterate through user's weekly answers, convert to float, and sum total
+for (let i = 0; i < weeklyExpenseQuestions.length; i++) {
+  let answer = parseFloat(window.prompt(weeklyExpenseQuestions[i]));
+  console.log(answer);
+  weeklyExpenses += answer;
+}
 
-//Get user lunch expenses
-window.prompt(weeklyExpenseQuestions[0]);
-let lunchCost = window.prompt(weeklyExpenseQuestions[0]);
-console.log(lunchCost);
+//Monthly
+for (let i = 0; i < monthlyExpenseQuestions.length; i++) {
+  let answer = parseFloat(window.prompt(monthlyExpenseQuestions[i]));
+  console.log(answer);
+  monthlyExpenses += answer;
+}
 
-//Conver from string to float
-let lunchNum = window.prompt(parseFloat(weeklyExpenseQuestions[0]));
-console.log(lunchNum);
+//Annual
+for (let i = 0; i < annualExpenseQuestions.length; i++) {
+  let answer = parseFloat(window.prompt(annualExpenseQuestions[i]));
+  console.log(answer);
+  annualExpenses += answer;
+}
+
+//same thing with while loops
+let i = 0;
+while (i < weeklyExpenses.length) {
+  let answer = parseFloat(window.prompt(weeklyExpenseQuestions[i]));
+  console.log(answer);
+  weeklyExpenses += answer;
+  i++;
+}
