@@ -23,11 +23,29 @@ for (let i = 0; i < annualExpenseQuestions.length; i++) {
   annualExpenses += answer;
 }
 
-//same thing with while loops
+/*same thing with while loops
+
 let i = 0;
-while (i < weeklyExpenses.length) {
+while (i < weeklyExpenseQuestions.length) {
   let answer = parseFloat(window.prompt(weeklyExpenseQuestions[i]));
   console.log(answer);
   weeklyExpenses += answer;
   i++;
 }
+
+let j = 0;
+while (j < monthlyExpenseQuestions.length) {
+  let answer = parseFloat(window.prompt(monthlyExpenseQuestions[i]));
+  console.log(answer);
+  monthlyExpenses += answer;
+  j++;
+}
+
+let k = 0;
+while (k < annualExpenseQuestions.length) {
+  let answer = parseFloat(window.prompt(annualExpenseQuestions[i]));
+  console.log(answer);
+  annualExpenses += answer;
+  k++;
+}
+*/
